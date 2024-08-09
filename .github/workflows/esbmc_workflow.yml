@@ -9,4 +9,4 @@ jobs:
             - name: Run ESBMC action
               uses: esbmc/esbmc-action@v2
               with:
-                esbmc-options: --incremental-bmc --include include/ --include .
+                esbmc-options: --incremental-bmc --include include/ --include . --include-file config.h
